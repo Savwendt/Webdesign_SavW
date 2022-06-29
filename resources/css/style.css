@@ -6,17 +6,21 @@
     box-sizing: border-box;
 }
     body {
-        background-color:rgb(255, 170, 0);
+        background-color:rgb(255, 254, 252);
     }
 
 
 /* -------------------- HEADINGS AND TYPE */
-h1 { background-color: beige;
+h1 { background-color: rgb(249, 155, 3);
 }
 
+img,
+iframe {
+    max-width: 100%;
+}
 /* -------------------- LAYOUTS */
 .layout-wide {
-    background-color: bisque;
+    background-color: rgb(250, 238, 222);
 
     max-width: 1000px;
 
