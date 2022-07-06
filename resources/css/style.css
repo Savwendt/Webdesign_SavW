@@ -15,7 +15,8 @@ h1 { background-color: rgb(249, 155, 3);
 }
 
 img,
-iframe {
+iframe,
+video {
     max-width: 100%;
 }
 /* -------------------- LAYOUTS */
