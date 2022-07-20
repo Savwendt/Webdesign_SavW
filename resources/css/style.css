@@ -1,17 +1,29 @@
 @import url("normalize.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /* -------------------- GLOBAL DEFAULTS */
-*{
+* {
     box-sizing: border-box;
 }
-    body {
-        background-color:rgb(249, 246, 241);
-    }
- 
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 
 /* -------------------- HEADINGS AND TYPE */
-h1 { background-color: rgb(239, 192, 151);
+h1 {
+    background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
 }
 
 img,
@@ -19,55 +31,65 @@ iframe,
 video {
     max-width: 100%;
 }
+
+
+
 /* -------------------- LAYOUTS */
 .layout-wide {
-    background-color: rgb(250, 238, 222);
-
-    max-width: 1000px;
-
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    padding:3%;
+    
 }
 
 
 
 /* -------------------- HEADER */
 .main-heading {
-background-color: aliceblue;
-color:blanchedalmond;
-font-size: 24px;
-padding: 1cm;
-text-align: center;
-
+    color: rgb(205, 255, 214);
+    font-size: 24px;
+    padding: 2cm;
+    text-align: center
 }
 
-@media screen and (min-width:500px) {.main-heading {
-    background-color: navajowhite;
-    color:brown;
-    font-size:48px;
-    border: 10px rgb(121, 122, 219)
-}
+@media screen and (min-width:500px) {
+    .main-heading {
+        color: rgb(114, 62, 62);
+        font-size: 48px;
+        border: 10px rgb(121, 122, 219)
+    }
 
 }
 
 @media screen and (min-width: 768px) {
     .main-heading {
-        background-color: burlywood;
-        color: white;
+        color: rgb(40, 53, 49);
         font-size: 72px;
-        border-color: oldlace;
-
 
     }
 }
-/* -------------------- NAVIGATION */
 
-/* -------------------- FOOTER */
+    body {
+        font-family: Arial, Helvetica, sans-serif
+    }
 
-/* -------------------- MODULES */
+    /* -------------------- NAVIGATION */
 
-.content-item {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-}
+
+    /* -------------------- FOOTER */
+
+
+    /* -------------------- MODULES */
+
+    .content-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+
+        .content-item {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
