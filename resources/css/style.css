@@ -1,5 +1,7 @@
 @import url("normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 /* -------------------- GLOBAL DEFAULTS */
 * {
@@ -9,22 +11,53 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color:rgb(41, 75, 62)
+}
+a:hover {
+    color: rgb(64, 156, 79);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:brown
+}
 
 /* -------------------- HEADINGS AND TYPE */
-h1 {
-    background-color: rgb(255, 255, 255);
-}
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5 
+ {
     font-family: 'Abril Fatface', cursive;
     font-weight: lighter;
 }
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 32px;
+
+}
+
+h3 {
+    font-size: 26px;
+}
+
 
 img,
 iframe,
@@ -34,36 +67,49 @@ video {
 
 
 
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 24px;
+}
+p { 
+    font-family: 'Lato', sans-serif;
+
+
+}
+
 /* -------------------- LAYOUTS */
 .layout-wide {
-    max-width: 1500px;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     
 }
 
-
-
 /* -------------------- HEADER */
 .main-heading {
     color: rgb(205, 255, 214);
-    font-size: 24px;
+    font-size: 30px;
     padding: 2cm;
     text-align: center
 }
 
 @media screen and (min-width:500px) {
     .main-heading {
-        color: rgb(114, 62, 62);
+        color: rgb(47, 76, 57);
         font-size: 48px;
-        border: 10px rgb(121, 122, 219)
     }
 
 }
 
 @media screen and (min-width: 768px) {
     .main-heading {
-        color: rgb(40, 53, 49);
+        color: rgb(37, 53, 49);
         font-size: 72px;
 
     }
@@ -90,6 +136,6 @@ video {
     @media screen and (min-width:768px) {
 
         .content-item {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:1fr 1fr;
         }
     }
