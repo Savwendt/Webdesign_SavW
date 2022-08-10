@@ -7,7 +7,7 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 
 body {
     background-color: rgb(255, 255, 255);
@@ -22,15 +22,16 @@ body {
 }
 
 a {
-    color:rgb(41, 75, 62)
+    color: rgb(41, 75, 62)
 }
+
 a:hover {
     color: rgb(64, 156, 79);
     text-decoration: underline;
 }
 
 a:visited {
-    color:brown
+    color: brown
 }
 
 /* -------------------- HEADINGS AND TYPE */
@@ -39,14 +40,13 @@ h1,
 h2,
 h3,
 h4,
-h5 
- {
+h5 {
     font-family: 'Abril Fatface', cursive;
     font-weight: lighter;
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 42px;
 }
 
 h2 {
@@ -70,6 +70,7 @@ video {
 h1 {
     font-size: 60px;
 }
+
 h2 {
     font-size: 42px;
 }
@@ -77,7 +78,8 @@ h2 {
 h3 {
     font-size: 24px;
 }
-p { 
+
+p {
     font-family: 'Lato', sans-serif;
 
 
@@ -88,15 +90,15 @@ p {
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 /* -------------------- HEADER */
 .main-heading {
-    color: rgb(205, 255, 214);
-    font-size: 30px;
+    color: rgb(10, 56, 18);
+    font-size: 20px;
     padding: 2cm;
-    text-align: center
+    text-align: left;
 }
 
 @media screen and (min-width:500px) {
@@ -110,32 +112,36 @@ p {
 @media screen and (min-width: 768px) {
     .main-heading {
         color: rgb(37, 53, 49);
-        font-size: 72px;
+        font-size: 62p x;
 
     }
 }
 
-    body {
-        font-family: Arial, Helvetica, sans-serif
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
 
-    /* -------------------- NAVIGATION */
-
-
-    /* -------------------- FOOTER */
+/* -------------------- NAVIGATION */
 
 
-    /* -------------------- MODULES */
+/* -------------------- FOOTER */
+
+
+footer .layout-wide {
+    text-align: left;
+}
+
+/* -------------------- MODULES */
+
+.content-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media screen and (min-width:768px) {
 
     .content-item {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr 1fr;
     }
-
-    @media screen and (min-width:768px) {
-
-        .content-item {
-            grid-template-columns:1fr 1fr;
-        }
-    }
+}
