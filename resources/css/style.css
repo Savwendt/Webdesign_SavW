@@ -105,6 +105,8 @@ p {
     .main-heading {
         color: rgb(47, 76, 57);
         font-size: 48px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 }
@@ -122,13 +124,53 @@ body {
 }
 
 /* -------------------- NAVIGATION */
+.main-nav{
+    list-style:none; 
+    padding-right: 0x;
+    text-align: center;
+
+    max-height:0;
+    overflow:hidden;
+
+}
+
+.main-nav.open {
+    
+}
+
+.main-nav a {
+    display: block;
+    color: rgb(37, 53, 49);
+    padding-top: 3px;
+    padding-bottom: 3px;
+  
+}
+
+.nav-prompt{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    
+
+}
+
+@media screen and (min-width:800px) {
+    .main-nav {
+        display: flex;
+        justify-content: space-between ;
+    }
+
+}
+
+
 
 
 /* -------------------- FOOTER */
 
 
 footer .layout-wide {
-    text-align: left;
+    text-align: right;
 }
 
 /* -------------------- MODULES */
