@@ -126,7 +126,7 @@ body {
 /* -------------------- NAVIGATION */
 .main-nav{
     list-style:none; 
-    padding-right: 0x;
+    padding: 0x;
     text-align: center;
 
     max-height:0;
@@ -135,14 +135,15 @@ body {
 }
 
 .main-nav.open {
+    max-height:100vh;
     
 }
 
 .main-nav a {
     display: block;
     color: rgb(37, 53, 49);
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   
 }
 
