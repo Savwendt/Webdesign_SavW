@@ -7,7 +7,7 @@
 * {
     box-sizing: border-box;
 }
- 
+
 
 body {
     background-color: rgb(255, 255, 255);
@@ -27,7 +27,7 @@ a {
 
 a:hover {
     color: rgb(64, 156, 79);
-    text-decoration: underline;
+   
 }
 
 a:visited {
@@ -90,15 +90,37 @@ p {
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+img { 
+    max-width: 100%;
+    
+}
+
+.content {
+
+    columns: 1;
+    column-gap: 10px;
+
+}
+@media screen and (min-width: 500px) {
+    .content {
+        columns: 2;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+columns: 4;
+margin-bottom: 20px;
+    }
+}
 /* -------------------- HEADER */
 .main-heading {
     color: rgb(10, 56, 18);
-    font-size: 20px;
+    font-size: 50px;
     padding: 2cm;
-    text-align: left;
+    text-align: center;
 }
 
 @media screen and (min-width:500px) {
@@ -124,19 +146,19 @@ body {
 }
 
 /* -------------------- NAVIGATION */
-.main-nav{
-    list-style:none; 
-    padding: 0x;
+.main-nav {
+    list-style: none;
+    padding: 0px;
     text-align: center;
 
-    max-height:0;
-    overflow:hidden;
+    max-height: 0;
+    overflow: hidden;
 
 }
 
 .main-nav.open {
-    max-height:100vh;
-    
+    max-height: 100vh;
+
 }
 
 .main-nav a {
@@ -144,22 +166,26 @@ body {
     color: rgb(37, 53, 49);
     padding-top: 5px;
     padding-bottom: 5px;
-  
+
 }
 
-.nav-prompt{
+.nav-prompt {
     background-color: transparent;
     border-style: solid;
     border-width: 2px;
-    border-color: green;
-    
+    border-color: rgb(5, 62, 5);
+width: 50%;
+padding-top: 5px;
+padding-bottom: 5px;
+
 
 }
 
 @media screen and (min-width:800px) {
     .main-nav {
         display: flex;
-        justify-content: space-between ;
+        justify-content: space-between;
+    max-height: unset;
     }
 
 }
