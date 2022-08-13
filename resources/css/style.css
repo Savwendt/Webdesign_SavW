@@ -26,12 +26,12 @@ a {
 }
 
 a:hover {
-    color: rgb(64, 156, 79);
+    color: rgb(0, 87, 68);
    
 }
 
 a:visited {
-    color: brown
+    color: rgb(46, 13, 13)
 }
 
 /* -------------------- HEADINGS AND TYPE */
@@ -133,11 +133,12 @@ margin-bottom: 20px;
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
     .main-heading {
-        color: rgb(37, 53, 49);
-        font-size: 62p x;
-
+        color: rgb(7, 53, 39);
+        font-size: 50px;
+text-align: left;
+padding-left: 50px;
     }
 }
 
@@ -153,12 +154,13 @@ body {
 
     max-height: 0;
     overflow: hidden;
+   
 
 }
 
 .main-nav.open {
     max-height: 100vh;
-
+    
 }
 
 .main-nav a {
@@ -166,6 +168,7 @@ body {
     color: rgb(37, 53, 49);
     padding-top: 5px;
     padding-bottom: 5px;
+    
 
 }
 
@@ -174,7 +177,7 @@ body {
     border-style: solid;
     border-width: 2px;
     border-color: rgb(5, 62, 5);
-width: 50%;
+width: 15%;
 padding-top: 5px;
 padding-bottom: 5px;
 
@@ -186,8 +189,8 @@ padding-bottom: 5px;
         display: flex;
         justify-content: space-between;
     max-height: unset;
+   
     }
-
 }
 
 
@@ -202,15 +205,12 @@ footer .layout-wide {
 
 /* -------------------- MODULES */
 
-.content-item {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+
+
+/* -------------------- GALLERY */
+.content img {
+    transition: 0.2s;
 }
-
-@media screen and (min-width:768px) {
-
-    .content-item {
-        grid-template-columns: 1fr 1fr;
-    }
+.content a:hover img {
+    transform: scale (1.1); 
 }
