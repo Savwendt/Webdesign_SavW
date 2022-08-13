@@ -1,3 +1,6 @@
+
+/* this is to open and close the nav */
+
 function openNav () {
 
 let toggler = document.querySelector
@@ -12,4 +15,8 @@ toggler.onclick = function () {
 }
 
 openNav();
+
+// this is for the gallery 
+
+var lightbox = new SimpleLightbox('.content a', { /* options */ });
 
