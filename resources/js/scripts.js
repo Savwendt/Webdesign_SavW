@@ -4,19 +4,19 @@
 function openNav () {
 
 let toggler = document.querySelector
-('.nav-promt');
-letnavigation =document.querySelector ('.main-nav');
+('.nav-prompt');
 
-toggler.onclick = function () {
+let navigation = document.querySelector('.main-nav');
 
-    Navigation.classlist.toggle('open');
+toggler.onclick=function(){
+
+    navigation.classList.toggle('open');
 }
 
 }
 
 openNav();
-
+ 
 // this is for the gallery 
 
 var lightbox = new SimpleLightbox('.content a', { /* options */ });
-
